@@ -26,28 +26,14 @@ python -m vllm.entrypoints.openai.api_server \
   --port 5000
 ```
 
-Setup the api key:
-
-```bash
-export OPENAI_API_KEY=sk-123456789
-```
-
-Then we can initilize the evaluator LLM with `xxx`:
-
-```python
-import os
-from xx import xx
-
-model = "xx"
-api_base = "http://0.0.0.0:5000/v1"
-
-```
-
 ### Run the Evaluation Pipeline
 
 ```python
+import os
 from RefFreeEval import Results, Evaluator
 from RefFreeEval.metrics import xxmetric
+
+os.environments[]
 
 # set-up the evaluator
 evaluator = Evaluator(model = 'xx', ...)
